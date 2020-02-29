@@ -78,3 +78,4 @@ class Surplus:
             db_info = json.load(json_file)
             conn = pyodbc.connect('DRIVER='+db_info['drvr']+';SERVER='+db_info["server"]+';DATABASE='+db_info["database"]+';UID='+db_info["user"]+';PWD='+db_info["password"])
             cursor = conn.cursor()
+
